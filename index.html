@@ -1,0 +1,1152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RoboYuwa - Youth-Led Robotics, AI & IoT Innovation in Nepal</title>
+    <meta name="description" content="RoboYuwa is a youth-led non-profit organization pioneering robotics, AI, and IoT innovation in Nepal. Founded in 2024, we empower young minds through hands-on learning and community collaboration.">
+    <meta name="keywords" content="RoboYuwa, Nepal robotics, youth innovation, AI Nepal, IoT Nepal, STEM education, technology Nepal, robotics club">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="RoboYuwa - Youth-Led Robotics & AI Innovation in Nepal">
+    <meta property="og:description" content="Empowering young minds with cutting-edge technology through hands-on learning and community collaboration.">
+    <meta property="og:image" content="assets/images/roboyuwa-logo.jpg">
+    
+    <link rel="icon" type="image/jpeg" href="assets/images/roboyuwa-logo.jpg">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@500;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="assets/images/roboyuwa-logo.jpg" alt="RoboYuwa Logo" style="height: 40px; margin-right: 10px; border-radius: 5px; vertical-align: middle;">
+                Robo<span>Yuwa</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#programs">Programs</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#join">Join Us</a></li>
+                <li><a href="#contact" class="btn-login">Contact</a></li>
+                <li><button id="themeToggle" class="theme-btn" aria-label="Toggle Theme"><i
+                            class="fas fa-moon"></i></button></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <!-- Honeycomb Corner Decorations -->
+        <div class="honeycomb-corner honeycomb-top-left">
+            <svg viewBox="0 0 600 600" class="honeycomb-svg">
+                <!-- Row 1 -->
+                <polygon points="50,87 75,100 75,126 50,139 25,126 25,100" class="hex-outline" />
+                <polygon points="75,52 100,65 100,91 75,104 50,91 50,65" class="hex-filled" />
+                <polygon points="100,17 125,30 125,56 100,69 75,56 75,30" class="hex-outline" />
+                <polygon points="125,-18 150,-5 150,21 125,34 100,21 100,-5" class="hex-outline" />
+                
+                <!-- Row 2 -->
+                <polygon points="75,122 100,135 100,161 75,174 50,161 50,135" class="hex-outline" />
+                <polygon points="100,87 125,100 125,126 100,139 75,126 75,100" class="hex-outline" />
+                <polygon points="125,52 150,65 150,91 125,104 100,91 100,65" class="hex-outline" />
+                <polygon points="150,17 175,30 175,56 150,69 125,56 125,30" class="hex-outline" />
+                <polygon points="175,-18 200,-5 200,21 175,34 150,21 150,-5" class="hex-outline" />
+                
+                <!-- Row 3 -->
+                <polygon points="100,157 125,170 125,196 100,209 75,196 75,170" class="hex-outline" />
+                <polygon points="125,122 150,135 150,161 125,174 100,161 100,135" class="hex-filled" />
+                <polygon points="150,87 175,100 175,126 150,139 125,126 125,100" class="hex-outline" />
+                <polygon points="175,52 200,65 200,91 175,104 150,91 150,65" class="hex-outline" />
+                <polygon points="200,17 225,30 225,56 200,69 175,56 175,30" class="hex-outline" />
+                <polygon points="225,-18 250,-5 250,21 225,34 200,21 200,-5" class="hex-outline" />
+                
+                <!-- Row 4 -->
+                <polygon points="125,192 150,205 150,231 125,244 100,231 100,205" class="hex-outline" />
+                <polygon points="150,157 175,170 175,196 150,209 125,196 125,170" class="hex-outline" />
+                <polygon points="175,122 200,135 200,161 175,174 150,161 150,135" class="hex-outline" />
+                <polygon points="200,87 225,100 225,126 200,139 175,126 175,100" class="hex-filled" />
+                <polygon points="225,52 250,65 250,91 225,104 200,91 200,65" class="hex-outline" />
+                <polygon points="250,17 275,30 275,56 250,69 225,56 225,30" class="hex-outline" />
+                
+                <!-- Row 5 -->
+                <polygon points="150,227 175,240 175,266 150,279 125,266 125,240" class="hex-outline" />
+                <polygon points="175,192 200,205 200,231 175,244 150,231 150,205" class="hex-outline" />
+                <polygon points="200,157 225,170 225,196 200,209 175,196 175,170" class="hex-filled" />
+                <polygon points="225,122 250,135 250,161 225,174 200,161 200,135" class="hex-outline" />
+                <polygon points="250,87 275,100 275,126 250,139 225,126 225,100" class="hex-outline" />
+                <polygon points="275,52 300,65 300,91 275,104 250,91 250,65" class="hex-outline" />
+                
+                <!-- Row 6 -->
+                <polygon points="175,262 200,275 200,301 175,314 150,301 150,275" class="hex-outline" />
+                <polygon points="200,227 225,240 225,266 200,279 175,266 175,240" class="hex-outline" />
+                <polygon points="225,192 250,205 250,231 225,244 200,231 200,205" class="hex-outline" />
+                <polygon points="250,157 275,170 275,196 250,209 225,196 225,170" class="hex-outline" />
+                <polygon points="275,122 300,135 300,161 275,174 250,161 250,135" class="hex-filled" />
+                <polygon points="300,87 325,100 325,126 300,139 275,126 275,100" class="hex-outline" />
+                
+                <!-- Row 7 -->
+                <polygon points="200,297 225,310 225,336 200,349 175,336 175,310" class="hex-outline" />
+                <polygon points="225,262 250,275 250,301 225,314 200,301 200,275" class="hex-outline" />
+                <polygon points="250,227 275,240 275,266 250,279 225,266 225,240" class="hex-outline" />
+                <polygon points="275,192 300,205 300,231 275,244 250,231 250,205" class="hex-filled" />
+                <polygon points="300,157 325,170 325,196 300,209 275,196 275,170" class="hex-outline" />
+                <polygon points="325,122 350,135 350,161 325,174 300,161 300,135" class="hex-outline" />
+            </svg>
+        </div>
+        
+        <div class="honeycomb-corner honeycomb-bottom-right">
+            <svg viewBox="0 0 600 600" class="honeycomb-svg">
+                <!-- Row 1 -->
+                <polygon points="275,313 300,326 300,352 275,365 250,352 250,326" class="hex-outline" />
+                <polygon points="300,278 325,291 325,317 300,330 275,317 275,291" class="hex-outline" />
+                <polygon points="325,243 350,256 350,282 325,295 300,282 300,256" class="hex-filled" />
+                <polygon points="350,208 375,221 375,247 350,260 325,247 325,221" class="hex-outline" />
+                <polygon points="375,173 400,186 400,212 375,225 350,212 350,186" class="hex-outline" />
+                <polygon points="400,138 425,151 425,177 400,190 375,177 375,151" class="hex-outline" />
+                
+                <!-- Row 2 -->
+                <polygon points="300,348 325,361 325,387 300,400 275,387 275,361" class="hex-outline" />
+                <polygon points="325,313 350,326 350,352 325,365 300,352 300,326" class="hex-outline" />
+                <polygon points="350,278 375,291 375,317 350,330 325,317 325,291" class="hex-outline" />
+                <polygon points="375,243 400,256 400,282 375,295 350,282 350,256" class="hex-outline" />
+                <polygon points="400,208 425,221 425,247 400,260 375,247 375,221" class="hex-filled" />
+                <polygon points="425,173 450,186 450,212 425,225 400,212 400,186" class="hex-outline" />
+                
+                <!-- Row 3 -->
+                <polygon points="325,383 350,396 350,422 325,435 300,422 300,396" class="hex-outline" />
+                <polygon points="350,348 375,361 375,387 350,400 325,387 325,361" class="hex-filled" />
+                <polygon points="375,313 400,326 400,352 375,365 350,352 350,326" class="hex-outline" />
+                <polygon points="400,278 425,291 425,317 400,330 375,317 375,291" class="hex-outline" />
+                <polygon points="425,243 450,256 450,282 425,295 400,282 400,256" class="hex-outline" />
+                <polygon points="450,208 475,221 475,247 450,260 425,247 425,221" class="hex-outline" />
+                
+                <!-- Row 4 -->
+                <polygon points="350,418 375,431 375,457 350,470 325,457 325,431" class="hex-outline" />
+                <polygon points="375,383 400,396 400,422 375,435 350,422 350,396" class="hex-outline" />
+                <polygon points="400,348 425,361 425,387 400,400 375,387 375,361" class="hex-outline" />
+                <polygon points="425,313 450,326 450,352 425,365 400,352 400,326" class="hex-filled" />
+                <polygon points="450,278 475,291 475,317 450,330 425,317 425,291" class="hex-outline" />
+                <polygon points="475,243 500,256 500,282 475,295 450,282 450,256" class="hex-outline" />
+                
+                <!-- Row 5 -->
+                <polygon points="375,453 400,466 400,492 375,505 350,492 350,466" class="hex-outline" />
+                <polygon points="400,418 425,431 425,457 400,470 375,457 375,431" class="hex-outline" />
+                <polygon points="425,383 450,396 450,422 425,435 400,422 400,396" class="hex-filled" />
+                <polygon points="450,348 475,361 475,387 450,400 425,387 425,361" class="hex-outline" />
+                <polygon points="475,313 500,326 500,352 475,365 450,352 450,326" class="hex-outline" />
+                <polygon points="500,278 525,291 525,317 500,330 475,317 475,291" class="hex-outline" />
+                
+                <!-- Row 6 -->
+                <polygon points="400,488 425,501 425,527 400,540 375,527 375,501" class="hex-outline" />
+                <polygon points="425,453 450,466 450,492 425,505 400,492 400,466" class="hex-outline" />
+                <polygon points="450,418 475,431 475,457 450,470 425,457 425,431" class="hex-outline" />
+                <polygon points="475,383 500,396 500,422 475,435 450,422 450,396" class="hex-outline" />
+                <polygon points="500,348 525,361 525,387 500,400 475,387 475,361" class="hex-filled" />
+                <polygon points="525,313 550,326 550,352 525,365 500,352 500,326" class="hex-outline" />
+                
+                <!-- Row 7 -->
+                <polygon points="425,523 450,536 450,562 425,575 400,562 400,536" class="hex-outline" />
+                <polygon points="450,488 475,501 475,527 450,540 425,527 425,501" class="hex-outline" />
+                <polygon points="475,453 500,466 500,492 475,505 450,492 450,466" class="hex-outline" />
+                <polygon points="500,418 525,431 525,457 500,470 475,457 475,431" class="hex-filled" />
+                <polygon points="525,383 550,396 550,422 525,435 500,422 500,396" class="hex-outline" />
+                <polygon points="550,348 575,361 575,387 550,400 525,387 525,361" class="hex-outline" />
+            </svg>
+        </div>
+        
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-rocket"></i>
+                    <span>Youth-Led Innovation Since 2024</span>
+                </div>
+                <h1>Building Nepal's <br>Technological Future</h1>
+                <p>A pioneering youth-led organization empowering young minds with robotics, AI, and IoT through hands-on learning, community collaboration, and real-world innovation.
+                </p>
+                <div class="hero-btns">
+                    <a href="#programs" class="btn btn-primary">
+                        Explore Programs <i class="fas fa-arrow-right" style="margin-left: 10px; font-size: 0.9em;"></i>
+                    </a>
+                    <a href="#about" class="btn btn-secondary">Our Mission</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <i class="fas fa-users"></i>
+                        <div>
+                            <strong>200+</strong>
+                            <span>Students Trained</span>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-calendar-alt"></i>
+                        <div>
+                            <strong>10+</strong>
+                            <span>Major Events</span>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-trophy"></i>
+                        <div>
+                            <strong>3+</strong>
+                            <span>Awards Won</span>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <strong>1.5+</strong>
+                            <span>Years of Innovation</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <!-- 3D Raspberry Pi Board Visualization -->
+                <div class="raspi-container">
+                    <!-- Honeycomb Background Pattern -->
+                    <div class="honeycomb-bg"></div>
+                    
+                    <!-- Circuit Lines Background -->
+                    <div class="circuit-lines">
+                        <svg class="circuit-svg" viewBox="0 0 400 400">
+                            <path class="circuit-path" d="M50,50 L150,50 L150,150" />
+                            <path class="circuit-path" d="M250,50 L350,50 L350,150" />
+                            <path class="circuit-path" d="M50,250 L150,250 L150,350" />
+                            <path class="circuit-path" d="M250,350 L350,350 L350,250" />
+                            <circle class="circuit-dot" cx="150" cy="150" r="4" />
+                            <circle class="circuit-dot" cx="350" cy="150" r="4" />
+                            <circle class="circuit-dot" cx="150" cy="250" r="4" />
+                            <circle class="circuit-dot" cx="350" cy="250" r="4" />
+                        </svg>
+                    </div>
+
+                    <!-- 3D Raspberry Pi Board -->
+                    <div class="raspi-board">
+                        <!-- Board Base -->
+                        <div class="board-base">
+                            <!-- Raspberry Pi Logo/Chip Area -->
+                            <div class="raspi-chip">
+                                <div class="chip-label">
+                                    <i class="fab fa-raspberry-pi"></i>
+                                    <span>Pi 4</span>
+                                </div>
+                                <div class="chip-shine"></div>
+                            </div>
+
+                            <!-- USB Ports (4 ports) -->
+                            <div class="usb-ports">
+                                <div class="usb-port usb-3" data-port="USB 3.0">
+                                    <div class="usb-connector blue"></div>
+                                </div>
+                                <div class="usb-port usb-3" data-port="USB 3.0">
+                                    <div class="usb-connector blue"></div>
+                                </div>
+                                <div class="usb-port usb-2" data-port="USB 2.0">
+                                    <div class="usb-connector"></div>
+                                </div>
+                                <div class="usb-port usb-2" data-port="USB 2.0">
+                                    <div class="usb-connector"></div>
+                                </div>
+                            </div>
+
+                            <!-- Ethernet Port -->
+                            <div class="ethernet-port">
+                                <div class="ethernet-connector">
+                                    <div class="ethernet-label">LAN</div>
+                                </div>
+                            </div>
+
+                            <!-- HDMI Ports -->
+                            <div class="hdmi-ports">
+                                <div class="hdmi-port hdmi-1">
+                                    <div class="hdmi-connector"></div>
+                                    <div class="port-label">HDMI 0</div>
+                                </div>
+                                <div class="hdmi-port hdmi-2">
+                                    <div class="hdmi-connector"></div>
+                                    <div class="port-label">HDMI 1</div>
+                                </div>
+                            </div>
+
+                            <!-- USB-C Power Port -->
+                            <div class="usbc-power">
+                                <div class="usbc-connector"></div>
+                                <div class="port-label">5V PWR</div>
+                            </div>
+
+                            <!-- Audio/Video Jack -->
+                            <div class="av-jack">
+                                <div class="jack-connector"></div>
+                            </div>
+
+                            <!-- MicroSD Card Slot -->
+                            <div class="sd-slot">
+                                <div class="sd-card"></div>
+                                <div class="sd-label">microSD</div>
+                            </div>
+
+                            <!-- LED Indicators -->
+                            <div class="led-indicator led-power">
+                                <div class="led-glow"></div>
+                            </div>
+                            <div class="led-indicator led-activity">
+                                <div class="led-glow"></div>
+                            </div>
+
+                            <!-- GPIO 40-Pin Header -->
+                            <div class="gpio-header">
+                                <div class="gpio-pins gpio-double">
+                                    <!-- Row 1 (odd pins 1-39) -->
+                                    <div class="pin-row">
+                                        <div class="pin power-3v3" data-pin="1"></div>
+                                        <div class="pin gpio-pin" data-pin="3"></div>
+                                        <div class="pin gpio-pin" data-pin="5"></div>
+                                        <div class="pin gpio-pin" data-pin="7"></div>
+                                        <div class="pin ground" data-pin="9"></div>
+                                        <div class="pin gpio-pin" data-pin="11"></div>
+                                        <div class="pin gpio-pin" data-pin="13"></div>
+                                        <div class="pin gpio-pin" data-pin="15"></div>
+                                        <div class="pin power-3v3" data-pin="17"></div>
+                                        <div class="pin gpio-pin" data-pin="19"></div>
+                                        <div class="pin ground" data-pin="21"></div>
+                                        <div class="pin gpio-pin" data-pin="23"></div>
+                                        <div class="pin gpio-pin" data-pin="25"></div>
+                                        <div class="pin gpio-pin" data-pin="27"></div>
+                                        <div class="pin gpio-pin" data-pin="29"></div>
+                                        <div class="pin ground" data-pin="31"></div>
+                                        <div class="pin gpio-pin" data-pin="33"></div>
+                                        <div class="pin gpio-pin" data-pin="35"></div>
+                                        <div class="pin gpio-pin" data-pin="37"></div>
+                                        <div class="pin ground" data-pin="39"></div>
+                                    </div>
+                                    <!-- Row 2 (even pins 2-40) -->
+                                    <div class="pin-row">
+                                        <div class="pin power-5v" data-pin="2"></div>
+                                        <div class="pin power-5v" data-pin="4"></div>
+                                        <div class="pin ground" data-pin="6"></div>
+                                        <div class="pin gpio-pin" data-pin="8"></div>
+                                        <div class="pin gpio-pin" data-pin="10"></div>
+                                        <div class="pin gpio-pin" data-pin="12"></div>
+                                        <div class="pin ground" data-pin="14"></div>
+                                        <div class="pin gpio-pin" data-pin="16"></div>
+                                        <div class="pin gpio-pin" data-pin="18"></div>
+                                        <div class="pin ground" data-pin="20"></div>
+                                        <div class="pin gpio-pin" data-pin="22"></div>
+                                        <div class="pin gpio-pin" data-pin="24"></div>
+                                        <div class="pin ground" data-pin="26"></div>
+                                        <div class="pin gpio-pin" data-pin="28"></div>
+                                        <div class="pin ground" data-pin="30"></div>
+                                        <div class="pin gpio-pin" data-pin="32"></div>
+                                        <div class="pin ground" data-pin="34"></div>
+                                        <div class="pin gpio-pin" data-pin="36"></div>
+                                        <div class="pin gpio-pin" data-pin="38"></div>
+                                        <div class="pin gpio-pin" data-pin="40"></div>
+                                    </div>
+                                </div>
+                                <div class="gpio-label">40-Pin GPIO</div>
+                            </div>
+
+                            <!-- Board Label -->
+                            <div class="board-label">
+                                <span>Raspberry Pi 4</span>
+                                <span class="board-sublabel">RoboYuwa Edition</span>
+                            </div>
+                        </div>
+
+                        <!-- Floating Info Tags -->
+                        <div class="info-tag tag-cpu">
+                            <i class="fas fa-microchip"></i>
+                            <span>Quad Core CPU</span>
+                        </div>
+                        <div class="info-tag tag-ram">
+                            <i class="fas fa-memory"></i>
+                            <span>4GB RAM</span>
+                        </div>
+                        <div class="info-tag tag-gpio">
+                            <i class="fas fa-plug"></i>
+                            <span>40 GPIO Pins</span>
+                        </div>
+                    </div>
+
+                    <!-- Orbital Particles -->
+                    <div class="orbital-particles">
+                        <div class="particle particle-1"><i class="fab fa-raspberry-pi"></i></div>
+                        <div class="particle particle-2"><i class="fas fa-robot"></i></div>
+                        <div class="particle particle-3"><i class="fas fa-brain"></i></div>
+                        <div class="particle particle-4"><i class="fas fa-network-wired"></i></div>
+                    </div>
+
+                    <!-- Glow Effect -->
+                    <div class="raspi-glow"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Platform Overview Section -->
+    <section id="programs" class="platform-overview">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">What We Do</span>
+                <h2>Our Programs & Activities</h2>
+                <div class="underline"></div>
+                <p class="section-description">Nurturing young talent through diverse technology programs and hands-on experiences</p>
+            </div>
+
+            <!-- 3D RFID Scanner Visual -->
+            <div class="rfid-showcase">
+                <div class="rfid-scanner">
+                    <div class="scanner-base">
+                        <div class="scanner-screen">
+                            <i class="fas fa-wifi scanner-icon"></i>
+                            <div class="scan-line"></div>
+                        </div>
+                        <div class="scanner-label">RFID</div>
+                    </div>
+                </div>
+                <div class="floating-id-card">
+                    <div class="mini-card">
+                        <div class="mini-chip"></div>
+                        <div class="mini-lines">
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="scan-waves">
+                    <div class="wave"></div>
+                    <div class="wave"></div>
+                    <div class="wave"></div>
+                </div>
+            </div>
+
+            <div class="platform-grid">
+                <div class="platform-card">
+                    <div class="platform-icon">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <h3>Workshops & Training</h3>
+                    <p>Regular hands-on sessions covering robotics, programming, AI fundamentals, and IoT applications. Learn from experienced members and industry professionals.</p>
+                </div>
+
+                <div class="platform-card">
+                    <div class="platform-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Hackathons & Competitions</h3>
+                    <p>Participate in external tech competitions and our internal hackathons. Test your skills, collaborate with peers, and win exciting prizes.</p>
+                </div>
+
+                <div class="platform-card">
+                    <div class="platform-icon">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <h3>Community Projects</h3>
+                    <p>Collaborate on innovative projects that address local challenges using technology. Make a real impact while building your portfolio.</p>
+                </div>
+
+                <div class="platform-card">
+                    <div class="platform-icon">
+                        <i class="fas fa-user-friends"></i>
+                    </div>
+                    <h3>Mentorship Programs</h3>
+                    <p>Connect beginners with experienced members and industry professionals. Get guidance, support, and accelerate your learning journey.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="workflow" class="workflow-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Learning Journey</span>
+                <h2>How We Empower Students</h2>
+                <div class="underline"></div>
+            </div>
+
+            <div class="workflow-steps">
+                <div class="workflow-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <div class="step-icon">
+                            <i class="fas fa-user-plus"></i>
+                        </div>
+                        <h3>Enroll & Assess</h3>
+                        <p>Students join our program and take a skills assessment to find the perfect starting point for their learning journey.</p>
+                    </div>
+                </div>
+
+                <div class="workflow-arrow">
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+
+                <div class="workflow-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <div class="step-icon">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                        </div>
+                        <h3>Hands-On Learning</h3>
+                        <p>Structured workshops combining theory with practical projects. Students build real robots, AI models, and IoT devices.</p>
+                    </div>
+                </div>
+
+                <div class="workflow-arrow">
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+
+                <div class="workflow-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <div class="step-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h3>Project Creation</h3>
+                        <p>Apply skills to create innovative solutions for real-world problems. Showcase projects at tech exhibitions and competitions.</p>
+                    </div>
+                </div>
+
+                <div class="workflow-arrow">
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+
+                <div class="workflow-step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <div class="step-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <h3>Certification & Growth</h3>
+                        <p>Earn certificates and continue advancing through our program levels. Join alumni network for career opportunities.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">About Us</span>
+                <h2>Who We Are</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="about-content">
+                <!-- Attendance Simulation Animation -->
+                <div class="simulation-wrapper">
+                    <div class="simulation-container">
+                        <div class="rfid-reader-box">
+                            <div class="reader-face reader-top">
+                                <div class="reader-screen">
+                                    <i class="fas fa-wifi reader-signal"></i>
+                                    <div class="success-tick">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                            <path fill-rule="evenodd"
+                                                d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="status-light"></div>
+                                <div class="brand-text">RFID SECURE</div>
+                            </div>
+                            <div class="reader-face reader-front"></div>
+                            <div class="reader-face reader-left"></div>
+                            <div class="reader-face reader-right"></div>
+                            <div class="reader-face reader-back"></div>
+                            <div class="reader-face reader-bottom"></div>
+                        </div>
+                        <div class="sim-card">
+                            <div class="card-header-strip"></div>
+                            <div class="sim-chip"></div>
+                            <div class="sim-photo">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="sim-details">
+                                <div class="sim-line title"></div>
+                                <div class="sim-line name"></div>
+                                <div class="sim-line id"></div>
+                            </div>
+                        </div>
+                        <div class="plus-one-particle">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Attendance Marked</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-details">
+                    <div class="about-text">
+                        <p><strong>RoboYuwa</strong> is a pioneering youth-led, non-profit organization dedicated to robotics, artificial intelligence, and Internet of Things (IoT) innovation in Nepal. Founded in 2024, we emerged from a shared vision among young technology enthusiasts who recognized the need to bridge the gap between traditional education and the rapidly evolving world of technology.</p>
+                        <p>The name "RoboYuwa" combines "Robo" (representing robotics and technology) with "Yuwa" (the Nepali word for youth), perfectly encapsulating our core identity as a youth-driven technology initiative. We empower young minds with cutting-edge technology and foster innovation through hands-on learning and community collaboration.</p>
+                        <p>We envision building a thriving community of young innovators who will shape Nepal's technological future and contribute meaningfully to the global tech ecosystem.</p>
+                    </div>
+
+                    <div class="about-stats">
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-lightbulb"></i>
+                            </div>
+                            <div class="stat-info">
+                                <h3>Innovation</h3>
+                                <p>Pushing boundaries with creative solutions</p>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div class="stat-info">
+                                <h3>Education</h3>
+                                <p>Hands-on learning beyond theory</p>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="stat-info">
+                                <h3>Community</h3>
+                                <p>Building supportive tech networks</p>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                            <div class="stat-info">
+                                <h3>Impact</h3>
+                                <p>Creating meaningful change</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Timeline Section -->
+    <section id="achievements" class="achievements-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Our Journey</span>
+                <h2>Achievements & Milestones</h2>
+                <div class="underline"></div>
+                <p class="section-description">1.5+ years of continuous innovation and impact</p>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span>August 2024</span>
+                        </div>
+                        <div class="timeline-card">
+                            <div class="timeline-icon">
+                                <i class="fas fa-trophy"></i>
+                            </div>
+                            <h3>Robo Fest - Butwal</h3>
+                            <p>Won prestigious awards at the Robo Fest competition, showcasing our technical prowess in robotics and innovation.</p>
+                            <div class="timeline-badge">Award Winner</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span>October 2024</span>
+                        </div>
+                        <div class="timeline-card">
+                            <div class="timeline-icon">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                            <h3>NASA Space Apps Challenge - Kathmandu</h3>
+                            <p>Selected for the prestigious NASA Space Apps Challenge, demonstrating our ability to tackle global-scale technological challenges.</p>
+                            <div class="timeline-badge">International</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span>November 2024</span>
+                        </div>
+                        <div class="timeline-card">
+                            <div class="timeline-icon">
+                                <i class="fas fa-lightbulb"></i>
+                            </div>
+                            <h3>Nepal Innovation Summit - Chitwan</h3>
+                            <p>Won awards at the Nepal Innovation Summit, establishing our reputation as innovators in the Nepali tech community.</p>
+                            <div class="timeline-badge">Award Winner</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span>March 2025</span>
+                        </div>
+                        <div class="timeline-card">
+                            <div class="timeline-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h3>RoboYuwa Workshop Series 2025 - Nawalpur</h3>
+                            <p>Organized and hosted comprehensive training program introducing students to robotics, AI, and IoT through hands-on sessions.</p>
+                            <div class="timeline-badge">Community Event</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="impact" class="benefits-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Our Impact</span>
+                <h2>Why Choose RoboYuwa</h2>
+                <div class="underline"></div>
+            </div>
+
+            <div class="benefits-grid">
+                <!-- Benefit Card 1 -->
+                <div class="benefit-card">
+                    <div class="benefit-gradient"></div>
+                    <div class="benefit-icon">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <h3>Free Education</h3>
+                    <p>100% free programs for underprivileged youth. No costs, no barriers - just opportunity.</p>
+                    <ul class="benefit-features">
+                        <li><i class="fas fa-check-circle"></i> Zero tuition fees</li>
+                        <li><i class="fas fa-check-circle"></i> Free learning materials</li>
+                        <li><i class="fas fa-check-circle"></i> Equipment provided</li>
+                    </ul>
+                </div>
+
+                <!-- Benefit Card 2 -->
+                <div class="benefit-card">
+                    <div class="benefit-gradient"></div>
+                    <div class="benefit-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Hands-On Learning</h3>
+                    <p>Build real robots, AI models, and IoT devices. Theory meets practice in every session.</p>
+                    <ul class="benefit-features">
+                        <li><i class="fas fa-check-circle"></i> Practical projects</li>
+                        <li><i class="fas fa-check-circle"></i> Modern equipment</li>
+                        <li><i class="fas fa-check-circle"></i> Real-world skills</li>
+                    </ul>
+                </div>
+
+                <!-- Benefit Card 3 -->
+                <div class="benefit-card">
+                    <div class="benefit-gradient"></div>
+                    <div class="benefit-icon">
+                        <i class="fas fa-user-friends"></i>
+                    </div>
+                    <h3>Expert Mentors</h3>
+                    <p>Learn from industry professionals and experienced educators who guide your journey.</p>
+                    <ul class="benefit-features">
+                        <li><i class="fas fa-check-circle"></i> 1-on-1 guidance</li>
+                        <li><i class="fas fa-check-circle"></i> Industry experts</li>
+                        <li><i class="fas fa-check-circle"></i> Career counseling</li>
+                    </ul>
+                </div>
+
+                <!-- Benefit Card 4 -->
+                <div class="benefit-card">
+                    <div class="benefit-gradient"></div>
+                    <div class="benefit-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3>Competitions & Events</h3>
+                    <p>Participate in robotics competitions, hackathons, and showcase your innovations.</p>
+                    <ul class="benefit-features">
+                        <li><i class="fas fa-check-circle"></i> National events</li>
+                        <li><i class="fas fa-check-circle"></i> Team projects</li>
+                        <li><i class="fas fa-check-circle"></i> Win prizes</li>
+                    </ul>
+                </div>
+
+                <!-- Benefit Card 5 -->
+                <div class="benefit-card">
+                    <div class="benefit-gradient"></div>
+                    <div class="benefit-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>Certifications</h3>
+                    <p>Earn recognized certificates that validate your skills and boost career prospects.</p>
+                    <ul class="benefit-features">
+                        <li><i class="fas fa-check-circle"></i> Industry-recognized</li>
+                        <li><i class="fas fa-check-circle"></i> Skill validation</li>
+                        <li><i class="fas fa-check-circle"></i> Portfolio building</li>
+                    </ul>
+                </div>
+
+                <!-- Benefit Card 6 -->
+                <div class="benefit-card">
+                    <div class="benefit-gradient"></div>
+                    <div class="benefit-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3>Community Network</h3>
+                    <p>Join a vibrant community of learners, mentors, and alumni building the future together.</p>
+                    <ul class="benefit-features">
+                        <li><i class="fas fa-check-circle"></i> Peer learning</li>
+                        <li><i class="fas fa-check-circle"></i> Alumni network</li>
+                        <li><i class="fas fa-check-circle"></i> Collaboration</li>
+                    </ul>
+                </div>
+
+                <!-- Benefit Card 7 -->
+                <div class="benefit-card">
+                    <div class="benefit-gradient"></div>
+                    <div class="benefit-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3>Career Support</h3>
+                    <p>Get placement assistance, interview preparation, and connections to tech companies.</p>
+                    <ul class="benefit-features">
+                        <li><i class="fas fa-check-circle"></i> Job referrals</li>
+                        <li><i class="fas fa-check-circle"></i> Resume building</li>
+                        <li><i class="fas fa-check-circle"></i> Interview prep</li>
+                    </ul>
+                </div>
+
+                <!-- Benefit Card 8 -->
+                <div class="benefit-card">
+                    <div class="benefit-gradient"></div>
+                    <div class="benefit-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Flexible Learning</h3>
+                    <p>Weekend workshops and online resources that fit your schedule. Learn at your own pace.</p>
+                    <ul class="benefit-features">
+                        <li><i class="fas fa-check-circle"></i> Weekend classes</li>
+                        <li><i class="fas fa-check-circle"></i> Online materials</li>
+                        <li><i class="fas fa-check-circle"></i> Self-paced</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">What You'll Learn</span>
+                <h2>Program Curriculum</h2>
+                <div class="underline"></div>
+            </div>
+
+            <div class="feature-grid">
+                <!-- Admin Panel -->
+                <div class="feature-card admin">
+                    <div class="card-icon"><i class="fas fa-robot"></i></div>
+                    <h3>Robotics Track</h3>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Mechanical design basics</li>
+                        <li><i class="fas fa-check"></i> Arduino programming</li>
+                        <li><i class="fas fa-check"></i> Sensor integration</li>
+                        <li><i class="fas fa-check"></i> Motor control systems</li>
+                        <li><i class="fas fa-check"></i> Build autonomous robots</li>
+                    </ul>
+                </div>
+
+                <!-- Student Portal -->
+                <div class="feature-card student">
+                    <div class="card-icon"><i class="fas fa-brain"></i></div>
+                    <h3>AI & ML Track</h3>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Python programming</li>
+                        <li><i class="fas fa-check"></i> Machine learning basics</li>
+                        <li><i class="fas fa-check"></i> Neural networks</li>
+                        <li><i class="fas fa-check"></i> Computer vision projects</li>
+                        <li><i class="fas fa-check"></i> Build AI applications</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Stack Section -->
+    <section id="tech-stack" class="tech-stack-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Skills</span>
+                <h2>Technologies We Teach</h2>
+                <div class="underline"></div>
+            </div>
+
+            <div class="tech-categories">
+                <div class="tech-category">
+                    <h3><i class="fas fa-robot"></i> Robotics</h3>
+                    <div class="tech-items">
+                        <div class="tech-item"><i class="fas fa-microchip"></i> Arduino & ESP32</div>
+                        <div class="tech-item"><i class="fas fa-cogs"></i> Mechanical Design</div>
+                        <div class="tech-item"><i class="fas fa-bolt"></i> Electronics</div>
+                    </div>
+                </div>
+
+                <div class="tech-category">
+                    <h3><i class="fas fa-brain"></i> AI & Machine Learning</h3>
+                    <div class="tech-items">
+                        <div class="tech-item"><i class="fab fa-python"></i> Python</div>
+                        <div class="tech-item"><i class="fas fa-project-diagram"></i> TensorFlow</div>
+                        <div class="tech-item"><i class="fas fa-eye"></i> Computer Vision</div>
+                    </div>
+                </div>
+
+                <div class="tech-category">
+                    <h3><i class="fas fa-wifi"></i> IoT & Electronics</h3>
+                    <div class="tech-items">
+                        <div class="tech-item"><i class="fas fa-network-wired"></i> IoT Platforms</div>
+                        <div class="tech-item"><i class="fas fa-cloud"></i> Cloud Integration</div>
+                        <div class="tech-item"><i class="fas fa-mobile-alt"></i> Mobile Apps</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="team" class="team">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Leadership</span>
+                <h2>Meet Our Team</h2>
+                <div class="underline"></div>
+                <p style="color: var(--text-muted); margin-top: 10px;">Youth leaders driving technological innovation in Nepal</p>
+            </div>
+
+            <div class="team-grid">
+                <!-- Founder & President -->
+                <div class="team-card">
+                    <div class="member-avatar">
+                        <div class="avatar-placeholder">
+                            <i class="fas fa-user"></i>
+                        </div>
+                    </div>
+                    <div class="member-info">
+                        <h3>Saugat Acharya</h3>
+                        <span class="role">FOUNDER & PRESIDENT</span>
+                        <p>Strategic visionary leading RoboYuwa's mission to empower Nepal's youth through technology and innovation.</p>
+                        <div class="contact-email">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:saugatacharya2060@gmail.com">saugatacharya2060@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Co-Founder & Secretary -->
+                <div class="team-card">
+                    <div class="member-avatar">
+                        <div class="avatar-placeholder">
+                            <i class="fas fa-user"></i>
+                        </div>
+                    </div>
+                    <div class="member-info">
+                        <h3>Sandesh Bhattarai</h3>
+                        <span class="role">CO-FOUNDER & SECRETARY</span>
+                        <p>Managing organizational coordination and administrative excellence to drive RoboYuwa's growth.</p>
+                        <div class="contact-email">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:bsandesh184@gmail.com">bsandesh184@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Technical Head -->
+                <div class="team-card">
+                    <div class="member-avatar">
+                        <div class="avatar-placeholder">
+                            <i class="fas fa-user"></i>
+                        </div>
+                    </div>
+                    <div class="member-info">
+                        <h3>Dipesh Acharya</h3>
+                        <span class="role">TECHNICAL HEAD</span>
+                        <p>Leading all technical initiatives, workshops, and innovative project development at RoboYuwa.</p>
+                        <div class="contact-email">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:adipeshacharya2@gmail.com">adipeshacharya2@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Join Us Section -->
+    <section id="join" class="join-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Join Our Team</span>
+                <h2>Be Part of the Innovation</h2>
+                <div class="underline"></div>
+                <p class="section-description">We're looking for passionate individuals to join our leadership team</p>
+            </div>
+
+            <div class="positions-grid">
+                <div class="position-card">
+                    <div class="position-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3>Vice President</h3>
+                    <p>Support organizational strategy and leadership, helping drive RoboYuwa's vision forward.</p>
+                    <div class="position-details">
+                        <span><i class="fas fa-clock"></i> Volunteer Position</span>
+                        <span><i class="fas fa-map-marker-alt"></i> Nepal</span>
+                    </div>
+                </div>
+
+                <div class="position-card">
+                    <div class="position-icon">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <h3>Technical & Research Head</h3>
+                    <p>Lead cutting-edge technical research and innovation projects in robotics, AI, and IoT.</p>
+                    <div class="position-details">
+                        <span><i class="fas fa-clock"></i> Volunteer Position</span>
+                        <span><i class="fas fa-map-marker-alt"></i> Nepal</span>
+                    </div>
+                </div>
+
+                <div class="position-card">
+                    <div class="position-icon">
+                        <i class="fas fa-balance-scale"></i>
+                    </div>
+                    <h3>Finance & Legalities Head</h3>
+                    <p>Manage financial operations and ensure legal compliance for the organization.</p>
+                    <div class="position-details">
+                        <span><i class="fas fa-clock"></i> Volunteer Position</span>
+                        <span><i class="fas fa-map-marker-alt"></i> Nepal</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="join-cta">
+                <p>Interested in joining our team?</p>
+                <a href="mailto:saugatacharya2060@gmail.com" class="btn btn-primary">
+                    <i class="fas fa-envelope"></i> Contact Us
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Footer -->
+    <footer class="footer">
+        <div class="footer-main">
+            <div class="container">
+                <div class="footer-grid">
+                    <!-- About Column -->
+                    <div class="footer-column">
+                        <h3 class="footer-logo">
+                            <img src="assets/images/roboyuwa-logo.jpg" alt="RoboYuwa Logo" style="height: 35px; margin-right: 8px; border-radius: 5px; vertical-align: middle;">
+                            Robo<span>Yuwa</span>
+                        </h3>
+                        <p class="footer-description">
+                            A pioneering youth-led non-profit organization driving robotics, AI, and IoT innovation in Nepal since 2024. Empowering young minds through hands-on learning and community collaboration.
+                        </p>
+                        <div class="footer-social">
+                            <a href="https://github.com/sakshyambastakoti" target="_blank" aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" target="_blank" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="#" target="_blank" aria-label="Twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" target="_blank" aria-label="Facebook">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Quick Links -->
+                    <div class="footer-column">
+                        <h4>Quick Links</h4>
+                        <ul class="footer-links">
+                            <li><a href="#home"><i class="fas fa-chevron-right"></i> Home</a></li>
+                            <li><a href="#about"><i class="fas fa-chevron-right"></i> About</a></li>
+                            <li><a href="#programs"><i class="fas fa-chevron-right"></i> Programs</a></li>
+                            <li><a href="#achievements"><i class="fas fa-chevron-right"></i> Achievements</a></li>
+                            <li><a href="#team"><i class="fas fa-chevron-right"></i> Team</a></li>
+                            <li><a href="#join"><i class="fas fa-chevron-right"></i> Join Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                    <h4 id="contact">Contact Us</h4>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>RoboYuwa<br>Kathmandu, Nepal</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>saugatacharya2060@gmail.com</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-user-circle"></i>
+                            <span>Founder: Saugat Acharya</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-globe"></i>
+                            <span><a href="#"
+                                    style="color: inherit; text-decoration: none;">www.roboyuwa.org</a></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2025 RoboYuwa Foundation. All Rights Reserved. | Empowering Youth Through Technology</p>
+                    <div class="footer-bottom-links">
+                        <a href="#">Privacy Policy</a>
+                        <span>•</span>
+                        <a href="#">Terms of Service</a>
+                        <span>•</span>
+                        <a href="#">Donate</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
