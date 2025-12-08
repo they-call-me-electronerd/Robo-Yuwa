@@ -38,8 +38,9 @@ const revealStyles = document.createElement('style');
 revealStyles.textContent = `
     .reveal {
         opacity: 0;
-        transform: translateY(30px);
-        transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        transform: translateY(50px);
+        transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1), 
+                    transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
     }
     
     .revealed {
@@ -50,7 +51,15 @@ revealStyles.textContent = `
     .mission-card.reveal,
     .program-card.reveal,
     .project-card.reveal {
-        transition-delay: calc(var(--delay, 0) * 0.1s);
+        transition-delay: calc(var(--delay, 0) * 0.15s);
+    }
+    
+    @media (prefers-reduced-motion: reduce) {
+        .reveal {
+            transition: none;
+            opacity: 1;
+            transform: none;
+        }
     }
 `;
 document.head.appendChild(revealStyles);
@@ -83,6 +92,27 @@ function initParallax() {
             });
         });
     }
+}
+
+// ===================================
+// Magnetic Button Effect
+// ===================================
+function initMagneticButtons() {
+    const buttons = document.querySelectorAll('.btn-primary, .btn-donate');
+    
+    buttons.forEach(button => {
+        button.addEventListener('mousemove', (e) => {
+            const rect = button.getBoundingClientRect();
+            const x = e.clientX - rect.left - rect.width / 2;
+            const y = e.clientY - rect.top - rect.height / 2;
+            
+            button.style.transform = `translate(${x * 0.2}px, ${y * 0.2}px) scale(1.05)`;
+        });
+        
+        button.addEventListener('mouseleave', () => {
+            button.style.transform = 'translate(0, 0) scale(1)';
+        });
+    });
 }
 
 // ===================================
@@ -385,6 +415,40 @@ function initParticleBackground() {
 }
 
 // ===================================
+// Text Scramble Effect
+// ===================================
+function scrambleText(element) {
+    const text = element.textContent;
+    const chars = '!<>-_\\/[]{}—=+*^?#________';
+    let iteration = 0;
+    
+    const interval = setInterval(() => {
+        element.textContent = text
+            .split('')
+            .map((char, index) => {
+                if (index < iteration) {
+                    return text[index];
+                }
+                return chars[Math.floor(Math.random() * chars.length)];
+            })
+            .join('');
+        
+        if (iteration >= text.length) {
+            clearInterval(interval);
+        }
+        
+        iteration += 1 / 3;
+    }, 30);
+}
+
+// Apply to headings on hover
+document.querySelectorAll('.section-title').forEach(title => {
+    title.addEventListener('mouseenter', function() {
+        scrambleText(this);
+    });
+});
+
+// ===================================
 // Initialize All Animations
 // ===================================
 document.addEventListener('DOMContentLoaded', () => {
@@ -394,6 +458,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initTiltEffect();
     initGlowEffect();
     initParticleBackground();
+    initMagneticButtons();
     
     // Optional: Enable cursor trail (can be performance-intensive)
     // initCursorTrail();
