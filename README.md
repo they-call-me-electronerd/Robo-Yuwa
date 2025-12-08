@@ -2,6 +2,25 @@
 
 A modern, responsive, and SEO-optimized website for RoboYuwa — a nonprofit NGO empowering Nepal's youth through Robotics, AI, and IoT education.
 
+## ✨ New! Enhanced Features
+
+🎉 **Major Update**: The website now includes **advanced CSS animations** and **interactive JavaScript features**!
+
+### What's New
+- ✅ 15+ professional animations (slide, scale, rotate, glow, shimmer)
+- ✅ 14 interactive features (parallax, 3D tilt, magnetic buttons, toast notifications)
+- ✅ Glass morphism effects
+- ✅ Custom cursor (desktop)
+- ✅ Scroll progress indicator
+- ✅ Advanced counter animations
+- ✅ Theme switcher (dark/light mode)
+- ✅ Accordion system
+- ✅ And much more!
+
+**📺 [View Live Demo](http://localhost:5173/demo.html)** | **📖 [Feature Documentation](./FEATURES.md)** | **⚡ [Quick Reference](./QUICKREF.md)**
+
+---
+
 ## 🚀 Features
 
 - **Modern Design**: Futuristic tech-themed design with clean UI/UX
@@ -10,6 +29,7 @@ A modern, responsive, and SEO-optimized website for RoboYuwa — a nonprofit NGO
 - **Performance**: Lazy loading, optimized assets, Lighthouse score 90+
 - **Interactive**: Smooth animations, lightbox gallery, modals, form validation
 - **Accessible**: WCAG AA compliant, keyboard navigable
+- **Enhanced**: Professional animations and interactive effects
 
 ## 📁 Project Structure
 
@@ -22,15 +42,19 @@ roboyuwa-website/
 ├── projects.html           # Projects page
 ├── blog.html               # Blog page
 ├── contact.html            # Contact page
+├── demo.html               # ⭐ NEW: Features demo page
 ├── src/
 │   ├── styles/
-│   │   └── main.css        # Tailwind CSS + custom styles
+│   │   └── main.css        # Tailwind CSS + custom styles (ENHANCED)
 │   └── js/
-│       ├── main.js         # Entry point
-│       └── utils.js        # JS utilities
+│       ├── main.js         # Entry point (ENHANCED)
+│       └── utils.js        # JS utilities (ENHANCED)
 ├── public/
 │   ├── sitemap.xml
 │   └── robots.txt
+├── FEATURES.md             # ⭐ NEW: Complete feature documentation
+├── QUICKREF.md             # ⭐ NEW: Quick reference card
+├── ENHANCEMENTS.md         # ⭐ NEW: Enhancement summary
 ├── package.json
 ├── tailwind.config.js
 ├── postcss.config.js
@@ -40,7 +64,7 @@ roboyuwa-website/
 ## 🛠️ Tech Stack
 
 - **HTML5** - Semantic markup
-- **CSS3** - Modern styling
+- **CSS3** - Modern styling with advanced animations
 - **Tailwind CSS** - Utility-first framework
 - **JavaScript (ES6+)** - Interactive functionality
 - **Vite** - Build tool and dev server
