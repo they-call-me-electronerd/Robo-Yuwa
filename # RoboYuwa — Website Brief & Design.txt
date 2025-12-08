@@ -1,6 +1,6 @@
-# RoboYuwa — Website Brief & Design Specification
+# RoboYuwa — Website Brief & Design Specification (Updated for HTML, CSS, JavaScript Only)
 
-**Purpose:** Build a modern, professional, SEO-friendly website for RoboYuwa — a nonprofit NGO that guides the next generation in Robotics, AI, and IoT. The site should feel trustworthy, futuristic, and approachable for students, educators, sponsors, and volunteers.
+**Purpose:** Build a modern, professional, SEO-friendly website for RoboYuwa — a nonprofit NGO that guides the next generation in Robotics, AI, and IoT. The site should be futuristic, clean, and optimized using only HTML, CSS, and JavaScript.
 
 ---
 
@@ -9,245 +9,184 @@
 * **Project name:** RoboYuwa
 * **Organization type:** Non-profit / NGO
 * **Primary goals:**
-
-  * Showcase RoboYuwa's mission, programs, projects, and events
+  * Showcase mission, programs, projects, and events
   * Recruit students, volunteers, and mentors
   * Attract sponsors and donations
-  * Publish news, tutorials, and project case studies
-  * Provide contact and sign-up flows for programs and workshops
+  * Publish tutorials, blogs, and project case studies
+  * Provide easy contact and registration flows
 
 ---
 
 ## 2. Target Audiences
 
-1. Students (age 12–24) interested in Robotics, AI, IoT
-2. Educators and schools seeking curriculum support or partnerships
-3. Sponsors, donors, and partner organizations
-4. Volunteers, mentors, and guest speakers
-5. General public and media
+1. Students (12–24) curious about Robotics, AI, IoT  
+2. Schools & educators  
+3. Sponsors and donors  
+4. Volunteers and mentors  
+5. Media and general public  
 
 ---
 
-## 3. Primary Pages & Sitemap
+## 3. Sitemap
 
-* Home
-* About
-
-  * Mission & Vision
-  * Team
-  * Partners
-* Programs
-
-  * Workshops
-  * Courses
-  * Mentorship
-* Projects & Demos
-
-  * Project gallery (filter by Robotics / AI / IoT)
-  * Case studies
-* Events
-
-  * Upcoming events
-  * Register
-* Blog / Tutorials
-* Get Involved
-
-  * Volunteer
-  * Mentor
-  * Sponsor
-* Donate
-* Contact
-* Privacy Policy / Terms
+* Home  
+* About (Mission, Vision, Team, Partners)  
+* Programs (Workshops, Courses, Mentorship)  
+* Projects (Gallery, Categories, Case Studies)  
+* Events (Upcoming + Registration)  
+* Blog / Tutorials  
+* Get Involved (Volunteer, Mentor, Sponsor)  
+* Donate  
+* Contact  
+* Privacy Policy  
 
 ---
 
-## 4. Key Features & Functionality
+## 4. Features
 
-* Responsive, mobile-first design
-* Fast performance and optimized images (lazy loading, WebP)
-* SEO-friendly fundamentals (meta tags, structured data)
-* Accessible: WCAG AA compliant basics
-* CMS-friendly blog (Markdown/Headless CMS) for tutorials
-* Event registration form with email confirmations
-* Donate integration (Stripe/PayPal or local Nepali gateway)
-* Project gallery with filters and lightbox
-* Newsletter signup (double opt-in)
-* Analytics: Google Analytics / GA4 + Search Console
+* Responsive design using CSS Grid + Flexbox  
+* High performance (lazy loading, WebP, optimized JS)  
+* SEO-ready (meta tags, structured data, sitemaps)  
+* Accessible (WCAG AA basics)  
+* Event registration using forms + JS (fetch API)  
+* Dynamic project gallery (JavaScript filtering + lightbox)  
+* Newsletter signup  
+* Analytics: GA4 + Search Console  
 
 ---
 
 ## 5. UX / UI Guidelines
 
-**Tone:** Professional, futuristic, friendly.
+**Tone:** Clean, futuristic, professional.
 
-**Visual direction:**
+**Visual direction:**  
+* Tech-themed hero with subtle animations  
+* Soft glows, neon lines, card-based layout  
+* Hover micro-interactions  
+* Honeycomb pattern optional background  
+* ESP32 illustration or 3D render on homepage hero  
 
-* Use a clean grid, ample whitespace, and subtle micro-animations.
-* Combine a dark-accent hero (for tech feel) with bright CTA accents.
-* Use large, readable headings and concise copy.
-
-**Header & navigation:**
-
-* Sticky header with logo, primary nav, and action CTA (Donate / Join).
-* Mobile: hamburger menu with clear hierarchy.
-
-**Hero section:**
-
-* Short tagline, supporting one-line description, primary CTA (Join / Programs) and secondary CTA (Donate).
-* Optional hero demo/video or animated robot illustration.
-
-**Cards & components:**
-
-* Project cards with image, short summary, tags, and CTA.
-* Event list with date chips and Register button.
-* Team cards with role + social links.
-
-**Footer:**
-
-* Quick links, contact, newsletter, social, legal links, partner logos.
+**Navigation:**  
+* Sticky navbar  
+* Mobile hamburger menu written in JS  
 
 ---
 
-## 6. Design System (suggested)
+## 6. Design System
 
-**Color palette (example):**
+**Colors (example):**  
+* Primary: #0F172A (navy)  
+* Accent: #00A3FF (blue neon)  
+* Secondary: #7C3AED (violet)  
+* Neutral: #F8FAFC, #64748B  
 
-* Primary: #0F172A (deep navy / background)
-* Accent: #00A3FF (electric blue)
-* Secondary: #7C3AED (violet accent)
-* Neutral: #F8FAFC (off-white), #64748B (muted slate)
-* Success/CTA: #06D6A0 (teal) — for Donate or success states
+**Typography:**  
+* Headings: Poppins / Inter  
+* Body: Roboto / Open Sans  
 
-**Typography:**
-
-* Headings: Inter / Poppins (variable weight)
-* Body: Roboto / Open Sans
-* Sizes: H1 44–56px (desktop), H2 32–40px, body 16px default
-
-**Spacing & radius:**
-
-* 8px baseline grid
-* Border-radius: 12px for cards, 9999px for pill CTAs
+**Layout:**  
+* 8px spacing grid  
+* Card radius: 12px  
+* Full-width hero section  
 
 ---
 
-## 7. Frontend Tech Stack & Architecture
+## 7. Frontend Tech Stack (Updated — No Frameworks)
 
-**Core:** HTML5, CSS3
-**Frameworks / Tools:**
+**Core:**  
+* HTML5  
+* CSS3 (Flexbox, Grid, animations)  
+* JavaScript (Vanilla JS only)
 
-* Tailwind CSS (utility-first styling)
-* Bootstrap (optional for quick components if desired)
-* Vanilla JavaScript or small framework (Alpine.js / HTMX) for interactivity
-* Build tooling: Vite or webpack
-* Icons: Heroicons / FontAwesome / Lucide
-* Images: SVG for illustrations; WebP fallback
+**Optional lightweight tools:**  
+* CSS Variables  
+* CSS keyframe animations  
+* Fetch API for forms and dynamic loading  
+* SVG/WebP assets  
+* Vite (optional) for fast development  
 
-**Folder structure (recommended)**
+**Folder Structure:**
 
 ```
-/src
-  /components
-  /layouts
-  /pages
-  /styles  (tailwind config, base.css)
-  /assets (images, svg)
-  /data  (markdown, json for projects)
-/dist
+/assets
+  /images
+  /icons
+/css
+  styles.css
+/js
+  main.js
+  animations.js
+  forms.js
+/pages
+  about.html
+  programs.html
+  projects.html
+  events.html
+  blog.html
+index.html
 ```
 
-**Integration tips:**
+---
 
-* Use Tailwind as primary styling engine; use Bootstrap utilities only when rapid prototyping is needed.
-* Keep components atomic and reusable.
-* Use CSS variables for theme tokens to enable easy color tweaks.
+## 8. SEO Strategy
+
+* Use semantic HTML structure  
+* Unique meta title + description for each page  
+* JSON-LD schema for Organization, Events, Blog  
+* Lazy-load images  
+* ALT text everywhere  
+* Robots.txt + sitemap.xml  
 
 ---
 
-## 8. SEO & Content Strategy
+## 9. Accessibility
 
-**On-page SEO basics:**
-
-* Unique page title and meta description for every page.
-* Use semantic HTML5 (header, main, article, section, footer).
-* H1 per page, hierarchical headings (H2, H3).
-* Image ALT text and descriptive filenames.
-* Sitemap.xml and robots.txt.
-
-**Structured data:**
-
-* Use JSON-LD for Organization, Website, Event, and Article schema.
-
-**Performance & Core Web Vitals:**
-
-* Defer non-critical JS, preconnect to required origins, compress assets.
-* Use responsive images (`srcset`) and `loading="lazy"`.
-
-**Content plan:**
-
-* Launch with: About, Programs (3 flagship), 5 project case studies, Events (next 3), Blog with 5 tutorials.
-* Ongoing: weekly or biweekly tutorials, monthly event recaps.
+* High contrast  
+* Keyboard navigable menus  
+* ARIA labels  
+* Descriptive links  
+* Form validation with JavaScript  
 
 ---
 
-## 9. Accessibility & Internationalization
+## 10. Analytics & Legal
 
-* Ensure color contrast meets WCAG AA.
-* Keyboard navigable forms and menus.
-* ARIA attributes where appropriate.
-* Prepare for Nepali language support (UTF-8, RTL not required) and local date formats.
-
----
-
-## 10. Analytics, Monitoring & Legal
-
-* GA4, Google Search Console
-* Error logging: Sentry or similar
-* Privacy policy & cookie notice
-* GDPR / data handling notes for newsletter and registration
+* GA4  
+* Search Console  
+* Cookie notice  
+* Privacy policy page  
 
 ---
 
-## 11. Sample Meta (Home page)
+## 11. Sample Meta Tag (Home Page)
 
 ```
 <title>RoboYuwa — Empowering Nepal’s Youth in Robotics, AI & IoT</title>
-<meta name="description" content="RoboYuwa is a nonprofit guiding the next generation of innovators through hands-on Robotics, AI, and IoT workshops, mentorship, and community projects.">
-<link rel="canonical" href="https://roboyuwa.org/" />
-<script type="application/ld+json">
-{ "@context": "https://schema.org", "@type": "Organization", "name": "RoboYuwa", "url": "https://roboyuwa.org", "sameAs": [] }
-</script>
+<meta name="description" content="RoboYuwa is a nonprofit guiding Nepal’s youth through hands-on Robotics, AI, and IoT projects, workshops, and mentorship programs.">
 ```
 
 ---
 
 ## 12. Launch Checklist
 
-* Content: final copy for all pages
-* Assets: logos, team photos, project images (optimized)
-* Forms: test registration and newsletter flows
-* SEO: sitemap, robots, meta tags
-* Analytics + Search Console verified
-* Accessibility: keyboard & screen reader test
-* Performance: Lighthouse score target > 90
+* All pages completed  
+* JS tested across devices  
+* Forms tested  
+* Optimized images  
+* Sitemap + robots uploaded  
+* Lighthouse score > 90  
 
 ---
 
-## 13. Next steps & Delivery Options
+## 13. Next Steps
 
-1. Create Figma wireframes for Home, Programs, Projects, and Event pages.
-2. Implement a Tailwind-based starter template (mobile-first).
-3. Connect CMS (Netlify CMS / Strapi / Sanity) for blog and projects.
-4. Set up hosting (Vercel / Netlify) and CI/CD.
-
----
-
-### Appendix: Example CTAs
-
-* Primary: "Join a Workshop" (prominent, header + hero)
-* Secondary: "Sponsor Our Work" (header, footer, programs)
-* Tertiary: "Read Projects" (cards & blog lists)
+1. Build wireframes  
+2. Create HTML structure  
+3. Build CSS layout (Grid + Flexbox)  
+4. Add JavaScript interactions  
+5. Optimize  
+6. Deploy to Vercel / Netlify  
 
 ---
 
-*End of document.*
+End of updated document.
