@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects — RoboYuwa | Student Robotics & AI Showcases</title>
+  <meta name="description" content="Explore amazing robotics, AI, and IoT projects built by RoboYuwa students. Get inspired by real-world applications created by Nepal's young innovators.">
+  <link rel="canonical" href="https://roboyuwa.org/projects.html" />
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+</head>
+<body>
+  <!-- Header -->
+  <header id="header" class="fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-white bg-opacity-95 backdrop-blur-sm">
+    <nav class="container-custom">
+      <div class="flex items-center justify-between h-20">
+        <a href="index.html" class="flex items-center gap-3">
+          <div class="w-12 h-12 bg-gradient-to-br from-accent to-secondary rounded-lg flex items-center justify-center">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"/>
+            </svg>
+          </div>
+          <span class="text-2xl font-bold gradient-text">RoboYuwa</span>
+        </a>
+        <div class="hidden lg:flex items-center gap-8">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="programs.html" class="nav-link">Programs</a>
+          <a href="events.html" class="nav-link">Events</a>
+          <a href="projects.html" class="nav-link text-accent">Projects</a>
+          <a href="blog.html" class="nav-link">Blog</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+        </div>
+        <div class="hidden lg:flex items-center gap-4">
+          <a href="programs.html" class="btn btn-outline">Join Workshop</a>
+          <a href="contact.html#donate" class="btn btn-success">Donate</a>
+        </div>
+        <button id="mobile-menu-button" class="lg:hidden p-2">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="fixed inset-y-0 right-0 w-full max-w-sm bg-white shadow-2xl z-50 transform translate-x-full transition-transform duration-300 lg:hidden">
+    <div class="flex flex-col h-full">
+      <div class="flex items-center justify-between p-6 border-b">
+        <span class="text-xl font-bold gradient-text">Menu</span>
+        <button id="mobile-menu-close" class="p-2"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg></button>
+      </div>
+      <nav class="flex-1 p-6">
+        <a href="index.html" class="nav-link-mobile">Home</a>
+        <a href="about.html" class="nav-link-mobile">About</a>
+        <a href="programs.html" class="nav-link-mobile">Programs</a>
+        <a href="events.html" class="nav-link-mobile">Events</a>
+        <a href="projects.html" class="nav-link-mobile bg-accent text-white">Projects</a>
+        <a href="blog.html" class="nav-link-mobile">Blog</a>
+        <a href="contact.html" class="nav-link-mobile">Contact</a>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Hero -->
+  <section class="relative bg-gradient-to-br from-primary to-secondary text-white pt-32 pb-20">
+    <div class="absolute inset-0 bg-grid opacity-10"></div>
+    <div class="container-custom relative z-10">
+      <div class="max-w-4xl mx-auto text-center fade-in">
+        <h1 class="text-white mb-6">Student <span class="text-accent">Projects</span></h1>
+        <p class="text-xl text-gray-200">Discover innovative robotics, AI, and IoT solutions built by our students</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Filter -->
+  <section class="section bg-neutral pt-12 pb-0">
+    <div class="container-custom">
+      <div class="flex flex-wrap justify-center gap-4 mb-12 fade-in">
+        <button data-filter="all" class="px-6 py-2 rounded-pill bg-accent text-white transition-all hover:scale-105">All Projects</button>
+        <button data-filter="robotics" class="px-6 py-2 rounded-pill bg-gray-200 text-gray-700 transition-all hover:scale-105">Robotics</button>
+        <button data-filter="ai" class="px-6 py-2 rounded-pill bg-gray-200 text-gray-700 transition-all hover:scale-105">AI</button>
+        <button data-filter="iot" class="px-6 py-2 rounded-pill bg-gray-200 text-gray-700 transition-all hover:scale-105">IoT</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Grid -->
+  <section class="section bg-neutral pt-0">
+    <div class="container-custom">
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Project 1 -->
+        <div class="card group fade-in active" data-category="robotics">
+          <div class="w-full h-48 bg-gradient-to-br from-accent to-secondary rounded-lg mb-4 overflow-hidden cursor-pointer" data-lightbox>
+            <img src="https://via.placeholder.com/400x300/00A3FF/FFFFFF?text=Line+Following+Robot" alt="Line Following Robot" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+          </div>
+          <div class="inline-block px-3 py-1 bg-accent bg-opacity-10 rounded-pill text-accent text-xs font-medium mb-3">Robotics</div>
+          <h3 class="text-xl mb-2">Line Following Robot</h3>
+          <p class="text-muted mb-4 text-sm">Autonomous robot using IR sensors for path tracking and obstacle avoidance.</p>
+          <div class="flex items-center gap-3 text-sm text-muted">
+            <span>By Sujan K.</span>
+            <span>•</span>
+            <span>Dec 2024</span>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="card group fade-in active" data-category="ai" style="animation-delay: 0.1s;">
+          <div class="w-full h-48 bg-gradient-to-br from-secondary to-primary rounded-lg mb-4 overflow-hidden cursor-pointer" data-lightbox>
+            <img src="https://via.placeholder.com/400x300/7C3AED/FFFFFF?text=Face+Recognition+System" alt="Face Recognition" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+          </div>
+          <div class="inline-block px-3 py-1 bg-secondary bg-opacity-10 rounded-pill text-secondary text-xs font-medium mb-3">AI</div>
+          <h3 class="text-xl mb-2">Face Recognition System</h3>
+          <p class="text-muted mb-4 text-sm">Deep learning model for real-time face detection and recognition.</p>
+          <div class="flex items-center gap-3 text-sm text-muted">
+            <span>By Anjali R.</span>
+            <span>•</span>
+            <span>Nov 2024</span>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="card group fade-in active" data-category="iot" style="animation-delay: 0.2s;">
+          <div class="w-full h-48 bg-gradient-to-br from-success to-accent rounded-lg mb-4 overflow-hidden cursor-pointer" data-lightbox>
+            <img src="https://via.placeholder.com/400x300/06D6A0/FFFFFF?text=Smart+Home+System" alt="Smart Home" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+          </div>
+          <div class="inline-block px-3 py-1 bg-success bg-opacity-10 rounded-pill text-success text-xs font-medium mb-3">IoT</div>
+          <h3 class="text-xl mb-2">Smart Home Automation</h3>
+          <p class="text-muted mb-4 text-sm">Complete home automation with mobile app control and voice commands.</p>
+          <div class="flex items-center gap-3 text-sm text-muted">
+            <span>By Prakash T.</span>
+            <span>•</span>
+            <span>Dec 2024</span>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="card group fade-in active" data-category="robotics">
+          <div class="w-full h-48 bg-gradient-to-br from-accent to-secondary rounded-lg mb-4 overflow-hidden cursor-pointer" data-lightbox>
+            <img src="https://via.placeholder.com/400x300/00A3FF/FFFFFF?text=Robotic+Arm" alt="Robotic Arm" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+          </div>
+          <div class="inline-block px-3 py-1 bg-accent bg-opacity-10 rounded-pill text-accent text-xs font-medium mb-3">Robotics</div>
+          <h3 class="text-xl mb-2">6-DOF Robotic Arm</h3>
+          <p class="text-muted mb-4 text-sm">Precision robotic arm for pick-and-place operations with computer vision.</p>
+          <div class="flex items-center gap-3 text-sm text-muted">
+            <span>By Deepak M.</span>
+            <span>•</span>
+            <span>Oct 2024</span>
+          </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="card group fade-in active" data-category="ai" style="animation-delay: 0.1s;">
+          <div class="w-full h-48 bg-gradient-to-br from-secondary to-primary rounded-lg mb-4 overflow-hidden cursor-pointer" data-lightbox>
+            <img src="https://via.placeholder.com/400x300/7C3AED/FFFFFF?text=Nepali+Text+Classifier" alt="Text Classifier" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+          </div>
+          <div class="inline-block px-3 py-1 bg-secondary bg-opacity-10 rounded-pill text-secondary text-xs font-medium mb-3">AI</div>
+          <h3 class="text-xl mb-2">Nepali Text Classifier</h3>
+          <p class="text-muted mb-4 text-sm">NLP model for classifying Nepali news articles into categories.</p>
+          <div class="flex items-center gap-3 text-sm text-muted">
+            <span>By Sita P.</span>
+            <span>•</span>
+            <span>Nov 2024</span>
+          </div>
+        </div>
+
+        <!-- Project 6 -->
+        <div class="card group fade-in active" data-category="iot" style="animation-delay: 0.2s;">
+          <div class="w-full h-48 bg-gradient-to-br from-success to-accent rounded-lg mb-4 overflow-hidden cursor-pointer" data-lightbox>
+            <img src="https://via.placeholder.com/400x300/06D6A0/FFFFFF?text=Agricultural+Monitor" alt="Agri Monitor" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+          </div>
+          <div class="inline-block px-3 py-1 bg-success bg-opacity-10 rounded-pill text-success text-xs font-medium mb-3">IoT</div>
+          <h3 class="text-xl mb-2">Smart Agriculture Monitor</h3>
+          <p class="text-muted mb-4 text-sm">IoT sensors for real-time crop monitoring and automated irrigation.</p>
+          <div class="flex items-center gap-3 text-sm text-muted">
+            <span>By Binod S.</span>
+            <span>•</span>
+            <span>Sep 2024</span>
+          </div>
+        </div>
+
+        <!-- Project 7 -->
+        <div class="card group fade-in active" data-category="robotics">
+          <div class="w-full h-48 bg-gradient-to-br from-accent to-secondary rounded-lg mb-4 overflow-hidden cursor-pointer" data-lightbox>
+            <img src="https://via.placeholder.com/400x300/00A3FF/FFFFFF?text=Maze+Solver+Robot" alt="Maze Solver" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+          </div>
+          <div class="inline-block px-3 py-1 bg-accent bg-opacity-10 rounded-pill text-accent text-xs font-medium mb-3">Robotics</div>
+          <h3 class="text-xl mb-2">Maze Solver Robot</h3>
+          <p class="text-muted mb-4 text-sm">Self-learning robot using flood-fill algorithm to solve complex mazes.</p>
+          <div class="flex items-center gap-3 text-sm text-muted">
+            <span>By Kritika B.</span>
+            <span>•</span>
+            <span>Oct 2024</span>
+          </div>
+        </div>
+
+        <!-- Project 8 -->
+        <div class="card group fade-in active" data-category="ai" style="animation-delay: 0.1s;">
+          <div class="w-full h-48 bg-gradient-to-br from-secondary to-primary rounded-lg mb-4 overflow-hidden cursor-pointer" data-lightbox>
+            <img src="https://via.placeholder.com/400x300/7C3AED/FFFFFF?text=Voice+Assistant" alt="Voice Assistant" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+          </div>
+          <div class="inline-block px-3 py-1 bg-secondary bg-opacity-10 rounded-pill text-secondary text-xs font-medium mb-3">AI</div>
+          <h3 class="text-xl mb-2">Nepali Voice Assistant</h3>
+          <p class="text-muted mb-4 text-sm">Speech recognition and synthesis for Nepali language commands.</p>
+          <div class="flex items-center gap-3 text-sm text-muted">
+            <span>By Anil G.</span>
+            <span>•</span>
+            <span>Aug 2024</span>
+          </div>
+        </div>
+
+        <!-- Project 9 -->
+        <div class="card group fade-in active" data-category="iot" style="animation-delay: 0.2s;">
+          <div class="w-full h-48 bg-gradient-to-br from-success to-accent rounded-lg mb-4 overflow-hidden cursor-pointer" data-lightbox>
+            <img src="https://via.placeholder.com/400x300/06D6A0/FFFFFF?text=Weather+Station" alt="Weather Station" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+          </div>
+          <div class="inline-block px-3 py-1 bg-success bg-opacity-10 rounded-pill text-success text-xs font-medium mb-3">IoT</div>
+          <h3 class="text-xl mb-2">IoT Weather Station</h3>
+          <p class="text-muted mb-4 text-sm">Multi-sensor weather monitoring with cloud data logging and forecasting.</p>
+          <div class="flex items-center gap-3 text-sm text-muted">
+            <span>By Ravi L.</span>
+            <span>•</span>
+            <span>Sep 2024</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="fixed inset-0 bg-black bg-opacity-90 hidden items-center justify-center z-50 p-4">
+    <button id="lightbox-close" class="absolute top-4 right-4 text-white hover:text-accent">
+      <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+      </svg>
+    </button>
+    <img id="lightbox-img" src="" alt="" class="max-w-full max-h-full rounded-lg">
+  </div>
+
+  <!-- CTA -->
+  <section class="section bg-gradient-to-br from-accent to-secondary text-white">
+    <div class="container-custom">
+      <div class="max-w-4xl mx-auto text-center fade-in">
+        <h2 class="text-white mb-6">Want to Build Your Own Project?</h2>
+        <p class="text-xl mb-8 text-gray-100">Join our programs and bring your ideas to life with expert guidance</p>
+        <a href="programs.html" class="btn bg-white text-accent hover:bg-gray-100">Explore Programs</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-primary text-neutral pt-16 pb-8">
+    <div class="container-custom">
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+        <div>
+          <div class="flex items-center gap-3 mb-6">
+            <div class="w-10 h-10 bg-gradient-to-br from-accent to-secondary rounded-lg flex items-center justify-center">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"/>
+              </svg>
+            </div>
+            <span class="text-xl font-bold">RoboYuwa</span>
+          </div>
+          <p class="text-gray-400">Empowering Nepal's youth through technology education.</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold mb-6">Quick Links</h4>
+          <ul class="space-y-3">
+            <li><a href="about.html" class="text-gray-400 hover:text-accent transition-colors">About</a></li>
+            <li><a href="programs.html" class="text-gray-400 hover:text-accent transition-colors">Programs</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold mb-6">Get Involved</h4>
+          <ul class="space-y-3">
+            <li><a href="contact.html" class="text-gray-400 hover:text-accent transition-colors">Contact Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold mb-6">Contact</h4>
+          <p class="text-gray-400">info@roboyuwa.org</p>
+        </div>
+      </div>
+      <div class="border-t border-gray-700 pt-8 text-center text-gray-400 text-sm">
+        <p>&copy; 2025 RoboYuwa. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/js/main.js"></script>
+</body>
+</html>
