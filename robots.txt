@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+# Disallow admin or private directories if any
+# Disallow: /admin/
+
+# Sitemap location
+Sitemap: https://roboyuwa.org/sitemap.xml
+
+# Crawl-delay (optional)
+Crawl-delay: 10
