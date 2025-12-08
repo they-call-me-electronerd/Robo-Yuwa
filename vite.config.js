@@ -11,6 +11,7 @@ export default defineConfig({
         projects: 'projects.html',
         blog: 'blog.html',
         contact: 'contact.html',
+        demo: 'demo.html',
       }
     },
     minify: 'terser',
