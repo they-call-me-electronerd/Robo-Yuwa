@@ -87,10 +87,17 @@
 
     <section class="notice-section" style="padding: 60px 0;">
         <div class="container notice-container">
-            <div class="empty-state">
-                <i class="fas fa-clipboard-list"></i>
-                <h3>No Recent Notices</h3>
-                <p>Check back later for updates on upcoming events and announcements.</p>
+            <!-- Facebook Page Plugin -->
+            <div id="fb-root"></div>
+            <script async defer crossorigin="anonymous"
+                src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v17.0" nonce="abc12345"></script>
+
+            <div class="fb-page" data-href="https://www.facebook.com/profile.php?id=61563808928659"
+                data-tabs="timeline,events,messages" data-width="500" data-height="800" data-small-header="false"
+                data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                <blockquote cite="https://www.facebook.com/profile.php?id=61563808928659" class="fb-xfbml-parse-ignore">
+                    <a href="https://www.facebook.com/profile.php?id=61563808928659">RoboYuwa</a>
+                </blockquote>
             </div>
         </div>
     </section>
@@ -114,7 +121,10 @@
                                     class="fab fa-github"></i></a>
                             <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
                             <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-                            <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                            <a href="https://www.facebook.com/profile.php?id=61563808928659" target="_blank"
+                                aria-label="Facebook">
+                                <i class="fab fa-facebook"></i>
+                            </a>
                         </div>
                     </div>
                     <div class="footer-column">
