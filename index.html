@@ -215,183 +215,31 @@
                 </div>
             </div>
             <div class="hero-image">
-                <!-- 3D Raspberry Pi Board Visualization -->
-                <div class="raspi-container">
-                    <!-- Honeycomb Background Pattern -->
-                    <div class="honeycomb-bg"></div>
-
-                    <!-- Circuit Lines Background -->
-                    <div class="circuit-lines">
-                        <svg class="circuit-svg" viewBox="0 0 400 400">
-                            <path class="circuit-path" d="M50,50 L150,50 L150,150" />
-                            <path class="circuit-path" d="M250,50 L350,50 L350,150" />
-                            <path class="circuit-path" d="M50,250 L150,250 L150,350" />
-                            <path class="circuit-path" d="M250,350 L350,350 L350,250" />
-                            <circle class="circuit-dot" cx="150" cy="150" r="4" />
-                            <circle class="circuit-dot" cx="350" cy="150" r="4" />
-                            <circle class="circuit-dot" cx="150" cy="250" r="4" />
-                            <circle class="circuit-dot" cx="350" cy="250" r="4" />
-                        </svg>
-                    </div>
-
-                    <!-- 3D Raspberry Pi Board -->
-                    <div class="raspi-board">
-                        <!-- Board Base -->
-                        <div class="board-base">
-                            <!-- Raspberry Pi Logo/Chip Area -->
-                            <div class="raspi-chip">
-                                <div class="chip-label">
-                                    <i class="fab fa-raspberry-pi"></i>
-                                    <span>Pi 4</span>
-                                </div>
-                                <div class="chip-shine"></div>
-                            </div>
-
-                            <!-- USB Ports (4 ports) -->
-                            <div class="usb-ports">
-                                <div class="usb-port usb-3" data-port="USB 3.0">
-                                    <div class="usb-connector blue"></div>
-                                </div>
-                                <div class="usb-port usb-3" data-port="USB 3.0">
-                                    <div class="usb-connector blue"></div>
-                                </div>
-                                <div class="usb-port usb-2" data-port="USB 2.0">
-                                    <div class="usb-connector"></div>
-                                </div>
-                                <div class="usb-port usb-2" data-port="USB 2.0">
-                                    <div class="usb-connector"></div>
-                                </div>
-                            </div>
-
-                            <!-- Ethernet Port -->
-                            <div class="ethernet-port">
-                                <div class="ethernet-connector">
-                                    <div class="ethernet-label">LAN</div>
-                                </div>
-                            </div>
-
-                            <!-- HDMI Ports -->
-                            <div class="hdmi-ports">
-                                <div class="hdmi-port hdmi-1">
-                                    <div class="hdmi-connector"></div>
-                                    <div class="port-label">HDMI 0</div>
-                                </div>
-                                <div class="hdmi-port hdmi-2">
-                                    <div class="hdmi-connector"></div>
-                                    <div class="port-label">HDMI 1</div>
-                                </div>
-                            </div>
-
-                            <!-- USB-C Power Port -->
-                            <div class="usbc-power">
-                                <div class="usbc-connector"></div>
-                                <div class="port-label">5V PWR</div>
-                            </div>
-
-                            <!-- Audio/Video Jack -->
-                            <div class="av-jack">
-                                <div class="jack-connector"></div>
-                            </div>
-
-                            <!-- MicroSD Card Slot -->
-                            <div class="sd-slot">
-                                <div class="sd-card"></div>
-                                <div class="sd-label">microSD</div>
-                            </div>
-
-                            <!-- LED Indicators -->
-                            <div class="led-indicator led-power">
-                                <div class="led-glow"></div>
-                            </div>
-                            <div class="led-indicator led-activity">
-                                <div class="led-glow"></div>
-                            </div>
-
-                            <!-- GPIO 40-Pin Header -->
-                            <div class="gpio-header">
-                                <div class="gpio-pins gpio-double">
-                                    <!-- Row 1 (odd pins 1-39) -->
-                                    <div class="pin-row">
-                                        <div class="pin power-3v3" data-pin="1"></div>
-                                        <div class="pin gpio-pin" data-pin="3"></div>
-                                        <div class="pin gpio-pin" data-pin="5"></div>
-                                        <div class="pin gpio-pin" data-pin="7"></div>
-                                        <div class="pin ground" data-pin="9"></div>
-                                        <div class="pin gpio-pin" data-pin="11"></div>
-                                        <div class="pin gpio-pin" data-pin="13"></div>
-                                        <div class="pin gpio-pin" data-pin="15"></div>
-                                        <div class="pin power-3v3" data-pin="17"></div>
-                                        <div class="pin gpio-pin" data-pin="19"></div>
-                                        <div class="pin ground" data-pin="21"></div>
-                                        <div class="pin gpio-pin" data-pin="23"></div>
-                                        <div class="pin gpio-pin" data-pin="25"></div>
-                                        <div class="pin gpio-pin" data-pin="27"></div>
-                                        <div class="pin gpio-pin" data-pin="29"></div>
-                                        <div class="pin ground" data-pin="31"></div>
-                                        <div class="pin gpio-pin" data-pin="33"></div>
-                                        <div class="pin gpio-pin" data-pin="35"></div>
-                                        <div class="pin gpio-pin" data-pin="37"></div>
-                                        <div class="pin ground" data-pin="39"></div>
-                                    </div>
-                                    <!-- Row 2 (even pins 2-40) -->
-                                    <div class="pin-row">
-                                        <div class="pin power-5v" data-pin="2"></div>
-                                        <div class="pin power-5v" data-pin="4"></div>
-                                        <div class="pin ground" data-pin="6"></div>
-                                        <div class="pin gpio-pin" data-pin="8"></div>
-                                        <div class="pin gpio-pin" data-pin="10"></div>
-                                        <div class="pin gpio-pin" data-pin="12"></div>
-                                        <div class="pin ground" data-pin="14"></div>
-                                        <div class="pin gpio-pin" data-pin="16"></div>
-                                        <div class="pin gpio-pin" data-pin="18"></div>
-                                        <div class="pin ground" data-pin="20"></div>
-                                        <div class="pin gpio-pin" data-pin="22"></div>
-                                        <div class="pin gpio-pin" data-pin="24"></div>
-                                        <div class="pin ground" data-pin="26"></div>
-                                        <div class="pin gpio-pin" data-pin="28"></div>
-                                        <div class="pin ground" data-pin="30"></div>
-                                        <div class="pin gpio-pin" data-pin="32"></div>
-                                        <div class="pin ground" data-pin="34"></div>
-                                        <div class="pin gpio-pin" data-pin="36"></div>
-                                        <div class="pin gpio-pin" data-pin="38"></div>
-                                        <div class="pin gpio-pin" data-pin="40"></div>
-                                    </div>
-                                </div>
-                                <div class="gpio-label">40-Pin GPIO</div>
-                            </div>
-
-                            <!-- Board Label -->
-                            <div class="board-label">
-                                <span>Raspberry Pi 4</span>
-                                <span class="board-sublabel">RoboYuwa Edition</span>
-                            </div>
+                <!-- Notice Carousel -->
+                <div class="hero-carousel-container">
+                    <div class="hero-carousel">
+                        <div class="carousel-slide">
+                            <!-- Using the renamed images -->
+                            <img src="assets/images/notice_1.png" alt="RADAR 2026 Registration Open">
                         </div>
-
-                        <!-- Floating Info Tags -->
-                        <div class="info-tag tag-cpu">
-                            <i class="fas fa-microchip"></i>
-                            <span>Quad Core CPU</span>
+                        <div class="carousel-slide">
+                            <img src="assets/images/notice_2.png" alt="Hardware Hackathon">
                         </div>
-                        <div class="info-tag tag-ram">
-                            <i class="fas fa-memory"></i>
-                            <span>4GB RAM</span>
-                        </div>
-                        <div class="info-tag tag-gpio">
-                            <i class="fas fa-plug"></i>
-                            <span>40 GPIO Pins</span>
+                        <div class="carousel-slide">
+                            <img src="assets/images/notice_3.png" alt="Join Our Team">
                         </div>
                     </div>
 
-                    <!-- Orbital Particles -->
-                    <div class="orbital-particles">
-                        <div class="particle particle-1"><i class="fab fa-raspberry-pi"></i></div>
-                        <div class="particle particle-2"><i class="fas fa-robot"></i></div>
-                        <div class="particle particle-3"><i class="fas fa-brain"></i></div>
-                        <div class="particle particle-4"><i class="fas fa-network-wired"></i></div>
-                    </div>
+                    <button class="carousel-btn prev-btn" aria-label="Previous Slide"><i
+                            class="fas fa-chevron-left"></i></button>
+                    <button class="carousel-btn next-btn" aria-label="Next Slide"><i
+                            class="fas fa-chevron-right"></i></button>
 
-                    <!-- Glow Effect -->
-                    <div class="raspi-glow"></div>
+                    <div class="carousel-dots">
+                        <button class="dot active" data-slide="0" aria-label="Slide 1"></button>
+                        <button class="dot" data-slide="1" aria-label="Slide 2"></button>
+                        <button class="dot" data-slide="2" aria-label="Slide 3"></button>
+                    </div>
                 </div>
             </div>
         </div>
